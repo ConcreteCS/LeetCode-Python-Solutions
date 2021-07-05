@@ -1,6 +1,8 @@
+# First:
 # Time: O(n^2)
 # Space: O(n)
 #
+# Second:
 # Time: O(nlgn)
 # Space: O(n)
 #
