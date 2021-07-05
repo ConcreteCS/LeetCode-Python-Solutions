@@ -1,3 +1,13 @@
+# Time:  O(n)
+# Space: O(1)
+#
+# You are given two linked lists representing two non-negative numbers. 
+# The digits are stored in reverse order and each of their nodes contain a single digit.
+# Add the two numbers and return it as a linked list.
+#
+# Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+# Output: 7 -> 0 -> 8
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -9,8 +19,6 @@ class Solution:
         root = n = ListNode(0)
         
         while l1 or l2 or carry:
-            print("l1:", l1, "l2:", l2, "carry:", carry)
-            
             v1 = v2 = 0
             if l1:
                 v1 = l1.val
@@ -20,14 +28,8 @@ class Solution:
                 l2 = l2.next
                 
             carry, val = divmod(v1+v2+carry, 10)
-            print("carry:", carry, "val:", val)
-            
             n.next = ListNode(val)
-            print("n:", n)
-            
             n = n.next
-            
-            print("\n")
             
         return root.next
     
