@@ -1,5 +1,5 @@
-# Time: O(N), where longest word is a single path down
-# Space: O(26*N) = O(N), for N total Nodes
+# Time: O(N)
+# Space: O(N)
 # 
 # A trie (pronounced as "try") or prefix tree is a tree data structure used to 
 # efficiently store and retrieve keys in a dataset of strings. There are various 
