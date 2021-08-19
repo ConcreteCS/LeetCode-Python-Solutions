@@ -1,8 +1,4 @@
-# First:
-# Time: O(n^2)
-# Space: O(n)
-#
-# Second:
+# lengthOfLIS2:
 # Time: O(nlgn)
 # Space: O(n)
 #
